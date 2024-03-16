@@ -19,6 +19,8 @@ import { ROUTES } from "./constants";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { setupI18n } from "./lang/setup";
+import { ErrorBoundary } from "react-error-boundary";
+import { NotFound } from "./components/NotFound/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -31,15 +33,18 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <AuthProvider>
           <CurrentProfileProvider>
             <Routes>
+              <Route path="*" element={<NotFound />} />
+
               <Route path="/example" element={<ExampleStyled />} />
               <Route
                 path="/"
                 element={
                   <ProtectedRoute role="user">
-                    <Home />
+                    <ErrorBoundary fallback={<div>Deu Merda</div>}>
+                      <Home />
+                    </ErrorBoundary>
                   </ProtectedRoute>
                 }
-                errorElement={<ExampleStyled />}
               />
               <Route path={ROUTES.LOGIN} element={<Login />} />
               <Route
