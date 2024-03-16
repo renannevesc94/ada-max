@@ -32,7 +32,15 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <CurrentProfileProvider>
             <Routes>
               <Route path="/example" element={<ExampleStyled />} />
-              <Route path="/" element={<Home />} />
+              <Route
+                path="/"
+                element={
+                  <ProtectedRoute role="user">
+                    <Home />
+                  </ProtectedRoute>
+                }
+                errorElement={<ExampleStyled />}
+              />
               <Route path={ROUTES.LOGIN} element={<Login />} />
               <Route
                 path={ROUTES.PROFILE}
