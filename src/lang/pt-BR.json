@@ -1,4 +1,13 @@
 {
   "home": "Página inicial",
-  "login.signIn": "Entrar"
+  "login.signIn": "Entrar",
+  "login.description": "Digite o endereço de e-mail e a senha da sua conta Max ou HBO Max.",
+  "login.getStarted": "Get Started",
+  "login.signUp": "Assinar agora",
+  "login.email": "Endereço de e-mail",
+  "login.password": "Senha",
+  "home.home": "Página Inicial",
+  "home.movies": "Filmes",
+  "home.kidFamily": "Criança e Família",
+  "home.goToMovie": "Ir para o filme"
 }
