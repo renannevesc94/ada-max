@@ -27,7 +27,7 @@ export const DeleteProfile = () => {
           <h4>{profile?.avatar.name}</h4>
         </div>
 
-        <h1 className="title">Delete Profile ?</h1>
+        <h1 className={styles.title}>Delete Profile ?</h1>
 
         <p className={styles.p}>
           This will permanently delete all settings and preferences for this profile, including My

@@ -1,8 +1,8 @@
+import clsx from "clsx";
 import { Avatar } from "../../../../components/Avatar";
 import { AvatarType } from "../../../../types";
-import clsx from "clsx";
-import styles from "./index.module.css";
 import { useGetAvatars } from "../../hooks/use-get-avatars";
+import styles from "./index.module.css";
 
 type Props = {
   onSelectAvatar: (avatar: AvatarType) => void;
@@ -19,12 +19,12 @@ export const AvatarPicker = ({ onSelectAvatar, onClose }: Props) => {
     <div className={styles.wrapper}>
       <div className="container">
         <button
-          className={clsx("btn btn--primary", styles.close)}
+          className={clsx("btn btn--primary", styles.btn)}
           onClick={onClose}
         >
           Back
         </button>
-        <div className="section">
+        <div className={styles.section}>
           <h1 className="title">Choose an Avatar</h1>
         </div>
         <div className={styles.container}>
