@@ -5,6 +5,7 @@ import { useGetProfile } from "../hooks/useGetProfile.tsx/use-getProfile";
 import { useEditProfile } from "./hooks/use-EditProfile";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
+import S from "./"
 
 export const EditProfile = () => {
   const params = useParams<{ id: string }>();
@@ -35,11 +36,11 @@ export const EditProfile = () => {
 
   return (
     <>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.limiter}>
           <div className={styles.container}>
             <h1 className="title">Edit Profile</h1>
-            <div className="flex-center" onClick={open}>
+            <div className={styles.flexcenter} onClick={open}>
               <Avatar image={avatar?.image} isEdit />
             </div>
 
