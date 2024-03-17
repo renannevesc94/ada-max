@@ -1,5 +1,13 @@
 {
-  "home": "Home Page Nice",
+  "home": "Home Page",
   "login.signIn": "Sign In",
-  "login.description": "Enter your Max or HBO Max account email address and password."
+  "login.description": "Enter your Max or HBO Max account email address and password.",
+  "login.getStarted": "Get Started",
+  "login.signUp": "Sign Up Now",
+  "login.email": "Email Address",
+  "login.password": "Password",
+  "home.home": "Home",
+  "home.movies": "Movies",
+  "home.kidFamily": "Kids & Family",
+  "home.goToMovie": "Go to Movie"
 }
