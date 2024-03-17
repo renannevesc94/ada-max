@@ -35,11 +35,11 @@ export const EditProfile = () => {
 
   return (
     <>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.limiter}>
           <div className={styles.container}>
             <h1 className="title">Edit Profile</h1>
-            <div className="flex-center" onClick={open}>
+            <div className={styles.flexcenter} onClick={open}>
               <Avatar image={avatar?.image} isEdit />
             </div>
 

@@ -33,7 +33,7 @@ export const CreateProfile = () => {
         <div className={styles.limiter}>
           <div className={styles.container}>
             <Title>Create Profile</Title>
-            <div className="flex-center" onClick={open}>
+            <div className={styles.flexcenter} onClick={open}>
               <Avatar image={avatar?.image} isEdit />
             </div>
             <form onSubmit={handleSubmit}>
