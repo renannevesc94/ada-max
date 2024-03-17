@@ -10,4 +10,4 @@
 
 [Vitória Teixeira](https://github.com/vitoriateixeiraa)
 
-[LINK DO PROJETO](https://ada-max-indol.vercel.app/login)
+[LINK DO PROJETO HOSPEDADO](https://ada-max-indol.vercel.app/login)
