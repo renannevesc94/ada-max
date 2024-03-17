@@ -8,7 +8,6 @@ import { InputPassword } from "../../components/InputPassword/InputPassword";
 export const Login = () => {
   const { t } = useTranslation();
   const { handleSubmit, register, errors, isPending, isError } = useLogin();
-
   return (
     <div className="container">
       <div className="header">
